@@ -2,7 +2,7 @@
 
 LUT_DIR="3dluts";
 OUTPUT_DIR="LUT_Demo";
-SOURCE="ARTWORK6`.dng";
+SOURCE="ARTWORK6.dng";
 mkdir -p "${OUTPUT_DIR}_${SOURCE%.*}"; \
 find "${LUT_DIR}/" -type f \( -iname "*.cube" -o -iname "*.3dl" -o -iname "*.lut" \) -print0 | \
 while IFS= read -r -d '' lut; do \
