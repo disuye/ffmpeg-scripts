@@ -1,0 +1,12 @@
+.DS_Store
+/3dluts
+/3dluts_BW
+*LUT_Demo*
+
+*.dng
+*.jpg
+*.png
+*.mov
+*.mp4
+*.wav
+*.mp3
