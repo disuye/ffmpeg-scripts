@@ -1,4 +1,6 @@
 #!/bin/bash
+# NOT WORKING 100%: Create a contact sheet image from all rendered LUT demo images w/ LUT file names shown
+
 FOLDER="LUT_Demo"
 OUTPUT="Contact_Sheet.png"
 
