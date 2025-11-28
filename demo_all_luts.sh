@@ -1,9 +1,9 @@
 #!/bin/bash
 # This script renders one demo image file through an entire folder of 3DLUT files, in order to quickly compare all LUTs side-by-side...
 # Change the variables: 
-# LUT_DIR = location folder that contains all of your 3DLUT files; can contain subfolders; file names with special characters *might* crash the script
-# OUTPUT_DIR = name & location of the folder where all processed images should be saved
-# SOURCE = name & location of the image file you wish to use, can be almost any image format
+# LUT_DIR = location of folder that contains all of your 3DLUT files; can contain subfolders; file names with special characters *might* crash the script
+# OUTPUT_DIR = name & location of the folder where all processed images should be output; folder will be created if it does not already exist
+# SOURCE = name & location of the demo image file you wish to use, can be almost any image format including RAW/DNG
 # Do not forget to make this script executable: chmod +x demo_all_luts.sh
 # github.com @disuye
 
