@@ -1,11 +1,13 @@
 #!/bin/bash
-# FFMPEG command to create social media promo video using album artwork + song snippet...
-# ARTWORK can be *.jpg or *.png, will be scaled to 1800x1800 pixels
-# MUSIC can be any audio format, *.wav gives best results
-# -ss is the Start Time of the 90 second music clip
-# lut3d = location of 3dLUT *.cube  or *.3dl file, for colour grading (optional)
-# noise=c0s=20:c0f=t+u
-# scale=1800:1800, setsar=1:1,
+# FFMPEG command to create  social media promo video using short video clip + song snippet + waveform oscilloscope...
+# ARTWORK = the movie file, can be any format & size, *must* be longer than (variable -t =) 90 seconds
+# MUSIC = the audio file, be any audio format, *.wav gives best results
+# -ss = fast forward thru the audio file to the beginning of the song preview 
+# -t = the duration of the video output, 90 seconds is default 
+# lut3d = location of a 3dLUT colour grading file (optional, can be left blank)
+# Optional special effects... Fake film grain: noise=c0s=20:c0f=t+u
+# Do not forget to make this script executable: chmod +x promo_maker-image.sh
+# github.com @disuye
 
 ffmpeg -i ARTWORK3.mov \
        -ss 00:04:29 \
