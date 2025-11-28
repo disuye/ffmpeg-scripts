@@ -15,5 +15,5 @@ https://evermeet.cx/ffmpeg/
 All scripts run in the Terminal (or VSCode) as shell scripts. Once downloaded, each script needs to be made executable:
 `chmod +x script_file_name.sh`
 
-The run the sctipt with:
+Then, after tweaking any variables, run the script with:
 `sh srcipt_file_name.sh`
