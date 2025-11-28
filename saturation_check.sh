@@ -1,5 +1,6 @@
 #!/bin/bash
-# Ultra-fast version – works perfectly on 99.9% of real-world images
+# NOT WORKING in all cases: Determine if an image contains colour, or is only black & white
+
 FOLDER="${1:-.}"
 
 echo "Checking images in: $FOLDER"
