@@ -9,7 +9,7 @@ OUTPUT_DURATION=551
 BACKGROUND=footage/img_seq/frame_%04d.png
 MASK_FILE=mask.png
 MATTE_FILE=matte.png
-# RPM45=(t*(3*PI/2), 2*PI)
+# RPM45=mod(t*(3*PI/2), 2*PI)
 # RPM33=mod(t*(10*PI/9), 2*PI)
 
 ffmpeg -y \
