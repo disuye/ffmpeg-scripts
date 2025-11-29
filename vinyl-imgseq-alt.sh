@@ -9,6 +9,8 @@ OUTPUT_DURATION=551
 BACKGROUND=footage/img_seq/frame_%04d.png
 MASK_FILE=mask.png
 MATTE_FILE=matte.png
+# RPM45=(t*(3*PI/2), 2*PI)
+# RPM33=mod(t*(10*PI/9), 2*PI)
 
 ffmpeg -y \
        -stream_loop -1 -r 25 -i "${BACKGROUND}" \
@@ -41,7 +43,7 @@ ffmpeg -y \
           scale=2160:2160[ARTWORK_PAD]; \
         \
         [ARTWORK_PAD] \
-          rotate=2*PI*t*(45/60):c=black, \
+          rotate='mod(t*(3*PI/2), 2*PI)':c=black, \
           crop=2160:2160:(iw-2160)/2:(ih-2160)/2, \
           scale=2160:2160[LABEL]; \
         \
