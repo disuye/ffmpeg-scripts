@@ -1,3 +1,7 @@
+# reducde MOV file size
+
+ffmpeg -i VINYL_f3.mp4 -c:v libx264 -crf 28 -preset veryslow -c:a aac -b:a 320k VINYL_f3-small.mp4
+
 # DUMP FILE FOR COPYING SNIPPETS
 
 ARTWORK=ARTWORK6.DNG
