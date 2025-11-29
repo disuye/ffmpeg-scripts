@@ -2,7 +2,7 @@
 # github.com/disuye/ffmpeg-scripts
 # FFMPEG script to simulate record artwork on a spinning turntable... 
 # EXPLANATION OF -filter_complex:
-# [0:v] cropping = turntable spindle is +10h -5w pixels off centre
+# [0:v] pad = turntable spindle is +10h -5w pixels off centre
 # Crop, center, garbage matte/mask & extract luma matte from the background turntable video (lines 1-2-3-4)
 # Rotate vinyl label artwork at 45RPM, crop & mask using luma matte (lines 5-6-7)
 # Composite, final crop, apply 3DLUT colour grading [optional] (line 8)
