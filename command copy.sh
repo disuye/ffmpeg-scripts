@@ -1,7 +1,4 @@
-# FFMPEG command to continuously rotate a PNG file, clockwise, at 45rpm, for 90 seconds and output an mp4 file
-# -preset slow -crf 18 -r 25 -movflags +faststart
-# lut3d='3dluts_vinyl/2.cube', 
-
+# DUMP FILE FOR COPYING SNIPPETS
 
 ARTWORK=ARTWORK6.DNG
 BACKGROUND=footage/C0002.MP4

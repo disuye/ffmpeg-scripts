@@ -8,7 +8,7 @@ ffmpeg -i ${BACKGROUND} \
        -loop 1 -i matte.png \
        -t 3 \
        -filter_complex \
-       "[0:v]crop='min(iw,ih)':'min(iw,ih)', scale=1800:1800, hue=s=0, eq=contrast=500:brightness=0.8, format=rgb24[A]; \
+       "[0:v]crop='min(iw,ih)':'min(iw,ih)', scale=2160:2160, hue=s=0, eq=contrast=500:brightness=0.8, format=rgb24[A]; \
        [A][1:v]blend=all_mode=darken, format=rgb24[garbage_mask]; \
        [garbage_mask][2:v]blend=all_mode=lighten, format=rgb24[luma_matte];" \
        -map "[luma_matte]" \
