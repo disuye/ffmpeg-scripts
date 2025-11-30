@@ -3,6 +3,8 @@
 /3dluts_vinyl
 /3dluts_BW
 /footage
+/construction_files
+
 *LUT_Demo*
 
 *.dng
@@ -15,3 +17,4 @@
 
 !mask.png
 !matte.png
+!muck.png
